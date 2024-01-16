@@ -20,7 +20,7 @@ jobs:
 
     concurrency:
       group: production-deployment
-      cancel-in-progress: true
+      cancel-in-progress: false
 
     steps:
       - name: Wait for 200 seconds

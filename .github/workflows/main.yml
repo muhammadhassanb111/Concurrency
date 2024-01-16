@@ -23,4 +23,4 @@ jobs:
         run: sleep 200
 
       - name: Echo Text Job 2
-        run: echo "Job 1 completed, and now this is Job 2"
+        run: echo "Job 1 completed, and now this is Job 1"

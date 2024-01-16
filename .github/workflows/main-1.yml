@@ -21,11 +21,12 @@ jobs:
     concurrency:
       group: production-deployment
       cancel-in-progress: false
+
+    timeout-minutes: 1  # Timeout for the entire job
+
     steps:
-      -name: timeout
-        timeout-minutes: 1
       - name: Wait for 200 seconds
         run: sleep 200
 
       - name: Echo Text Job 2
-        run: echo "Job 1 completed, and now this is Job 3"
+        run: echo "Job 1 completed, and now this is Job 2"
